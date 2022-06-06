@@ -1,10 +1,11 @@
 import React from 'react'
+import imageBG from "../assets/bg_loader.jpg"
 
 
 const Loading = () => {
   return (
     <div className="container">
-        <img src="./src/assets/bg_loader.jpg" alt="" />
+        <img src={imageBG} alt="" />
         <div className="loader">
             <div className="ball"></div>
             <div className="ball"></div>
