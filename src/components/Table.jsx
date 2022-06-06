@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import switch1 from "../assets/degreeC.png"
+import switch2 from "../assets/degreeF.png"
+import iconCloud from "../assets/statCloud.png"
+import iconPressure from "../assets/statPressure.png"
+import iconWind from "../assets/statWind.png"
+import iconHumidity from "../assets/statHumidity.png"
 
 const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
@@ -66,12 +71,13 @@ const Table = ({weather}) => {
           degree ?
           <img src={switch1} alt="Weather Icon" onClick={changeDegree} width="60px"/>
           :
-          <img src="src/assets/degreeF.png" alt="Weather Icon" onClick={changeDegree} width="60px"/> 
+          <img src={switch2} alt="Weather Icon" onClick={changeDegree} width="60px"/> 
         }
              
       </div>
 
       <div className="Main">
+        
         <img src={imageIcon} alt="Weather Icon" width="200px"/>
         <div className="mainTemp">
           {
@@ -93,7 +99,7 @@ const Table = ({weather}) => {
             <p>{weather?.wind.speed} m/s</p>
           </div>
           <div className="iconFeature">
-            <img src="src/assets/statWind.png" alt="Weather Icon" width="75px"/>  
+            <img src={iconWind} alt="Weather Icon" width="75px"/>  
           </div>          
         </div>
 
@@ -103,7 +109,7 @@ const Table = ({weather}) => {
             <p>{weather?.clouds.all}%</p>
           </div>
           <div className="iconFeature">
-            <img src="src/assets/statCloud.png" alt="Weather Icon" width="75px"/> 
+            <img src={iconCloud} alt="Weather Icon" width="75px"/> 
           </div>          
         </div>
 
@@ -113,7 +119,7 @@ const Table = ({weather}) => {
             <p>{weather?.main.pressure} hPa</p>
           </div>
           <div className="iconFeature">
-            <img src="src/assets/statPressure.png" alt="Weather Icon" width="75px"/> 
+            <img src={iconPressure} alt="Weather Icon" width="75px"/> 
           </div>          
         </div>
 
@@ -123,7 +129,7 @@ const Table = ({weather}) => {
             <p>{weather?.main.humidity}%</p>
           </div>
           <div className="iconFeature">
-            <img src="src/assets/statHumidity.png" alt="Weather Icon" width="75px"/> 
+            <img src={iconHumidity} alt="Weather Icon" width="75px"/> 
           </div>          
         </div>
       </div>
