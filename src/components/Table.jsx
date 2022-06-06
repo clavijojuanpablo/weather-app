@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import switch1 from "..src/assets/degreeC.png"
+import switch1 from "../assets/degreeC.png"
 
 const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
