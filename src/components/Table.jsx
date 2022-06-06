@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import switch1 from "src/assets/degreeC.png"
 
 const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
@@ -61,7 +62,7 @@ const Table = ({weather}) => {
         
         {
           degree ?
-          <img src="src/assets/degreeC.png" alt="Weather Icon" onClick={changeDegree} width="60px"/>
+          <img src={switch1} alt="Weather Icon" onClick={changeDegree} width="60px"/>
           :
           <img src="src/assets/degreeF.png" alt="Weather Icon" onClick={changeDegree} width="60px"/> 
         }
