@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import switch1 from "src/assets/degreeC.png"
+import switch1 from "..src/assets/degreeC.png"
 
 const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
 
 const Table = ({weather}) => {
+
+  console.log(switch1)
 
   //Constructor Date
   const today = new Date();
